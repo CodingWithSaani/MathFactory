@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MathFactory</string>
+    <string name="math_is_fun">MATH IS FUN</string>
+    <string name="enter_the_first_number">Enter the first number</string>
+    <string name="enter_the_second_number">Enter the second number</string>
+    <string name="add">Add</string>
+    <string name="result_is">Result is:</string>
+    <string name="avatar">Avatar</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/my_file"
+        android:contentDescription="@string/avatar"/>
+
+    <TextView
+        android:id="@+id/mathLogoTextTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoIV"
+        android:gravity="center"
+        android:text="@string/math_is_fun"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:autofillHints="@string/enter_the_first_number"
+        android:id="@+id/numberOneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mathLogoTextTV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/et_background"
+        android:hint="@string/enter_the_first_number"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/numberTwoET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberOneET"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/et_background"
+        android:hint="@string/enter_the_second_number"
+        android:autofillHints="@string/enter_the_second_number"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary" />
+
+    <Button
+        android:onClick="addNumber"
+        android:id="@+id/addBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberTwoET"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_background"
+        android:text="@string/add"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="@string/result_is"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
